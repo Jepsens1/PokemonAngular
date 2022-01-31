@@ -1,0 +1,13 @@
+<div *ngIf="pokemon">
+
+    <h2>{{pokemon.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{pokemon.id}}</div>
+    <div>
+      <label for="pokemon-name">Pokemon Details: </label>
+      <p>Name: {{pokemon.name}}</p>
+      <p>Base Level: {{pokemon.base_Level}}</p>
+      <p>Pokemon Type: {{pokemon.poketype}}</p>
+      <img [src]="imagePath" [alt]="">
+    </div>
+    <button (click)="goBack()">go back</button>
+  </div>

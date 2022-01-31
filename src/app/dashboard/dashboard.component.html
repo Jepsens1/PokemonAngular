@@ -1,0 +1,8 @@
+<h2>Top Heroes</h2>
+<div class="pokemon-menu">
+  <a *ngFor="let pokemon of pokemons" routerLink="/detail/{{pokemon.id}}">
+    {{pokemon.name}}
+    <img src="/assets/pokemonimage/{{pokemon.name}}.jpg" [alt]="pokemon.name">
+  </a>
+</div>
+<app-pokemon-search></app-pokemon-search>
